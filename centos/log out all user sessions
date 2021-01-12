@@ -1,0 +1,1 @@
+loginctl | egrep -v "root|gdm|SESSION|listed" | awk '{print $1}' | xargs loginctl terminate-session

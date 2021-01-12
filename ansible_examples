@@ -1,0 +1,9 @@
+Windows ask for password
+Speak messages:
+ansible windows -m win_say -a "msg='enter text here' start_sound_path='C:\\windows\\media\\ding.wav' speech_speed=2" -k
+
+Run a playbook
+ansible-playbook  test.yml  -k
+
+Ping
+ansible windows -m win_ping -k
